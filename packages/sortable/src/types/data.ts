@@ -1,4 +1,4 @@
-import type {UniqueIdentifier} from '@dnd-kit/core';
+import type {UniqueIdentifier} from '@dnd-kit-orchestra/core';
 
 export type SortableData = {
   sortable: {

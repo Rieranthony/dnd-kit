@@ -1,5 +1,5 @@
 import React from 'react';
-import {useDraggable} from '@dnd-kit/core';
+import {useDraggable} from '@dnd-kit-orchestra/core';
 import classNames from 'classnames';
 
 import styles from './Switch.module.css';

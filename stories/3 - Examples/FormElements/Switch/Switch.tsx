@@ -8,11 +8,11 @@ import {
   PointerSensor,
   useSensor,
   useSensors,
-} from '@dnd-kit/core';
+} from '@dnd-kit-orchestra/core';
 import {
   restrictToHorizontalAxis,
   restrictToParentElement,
-} from '@dnd-kit/modifiers';
+} from '@dnd-kit-orchestra/modifiers';
 import classNames from 'classnames';
 
 import {State} from './constants';

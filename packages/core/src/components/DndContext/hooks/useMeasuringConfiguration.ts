@@ -1,5 +1,5 @@
 import {useMemo} from 'react';
-import type {DeepRequired} from '@dnd-kit/utilities';
+import type {DeepRequired} from '@dnd-kit-orchestra/utilities';
 
 import {defaultMeasuringConfiguration} from '../defaults';
 import type {MeasuringConfiguration} from '../types';

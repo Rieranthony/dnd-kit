@@ -5,7 +5,7 @@ import {
   useIsomorphicLayoutEffect,
   useLatestValue,
   useUniqueId,
-} from '@dnd-kit/utilities';
+} from '@dnd-kit-orchestra/utilities';
 
 import {InternalContext, Data} from '../store';
 import type {UniqueIdentifier} from '../types';

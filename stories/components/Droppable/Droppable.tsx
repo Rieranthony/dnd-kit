@@ -1,5 +1,5 @@
 import React from 'react';
-import {useDroppable, UniqueIdentifier} from '@dnd-kit/core';
+import {useDroppable, UniqueIdentifier} from '@dnd-kit-orchestra/core';
 import classNames from 'classnames';
 
 import {droppable} from './droppable-svg';

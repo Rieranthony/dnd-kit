@@ -11,20 +11,20 @@ import {
   MeasuringStrategy,
   DropAnimation,
   defaultDropAnimationSideEffects,
-} from '@dnd-kit/core';
+} from '@dnd-kit-orchestra/core';
 import type {
   DragStartEvent,
   DragEndEvent,
   MeasuringConfiguration,
   UniqueIdentifier,
-} from '@dnd-kit/core';
+} from '@dnd-kit-orchestra/core';
 import {
   arrayMove,
   useSortable,
   SortableContext,
   sortableKeyboardCoordinates,
-} from '@dnd-kit/sortable';
-import {CSS, isKeyboardEvent} from '@dnd-kit/utilities';
+} from '@dnd-kit-orchestra/sortable';
+import {CSS, isKeyboardEvent} from '@dnd-kit-orchestra/utilities';
 import classNames from 'classnames';
 
 import {createRange} from '../../../utilities';

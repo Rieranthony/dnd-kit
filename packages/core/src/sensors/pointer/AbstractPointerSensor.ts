@@ -3,7 +3,7 @@ import {
   getEventCoordinates,
   getOwnerDocument,
   getWindow,
-} from '@dnd-kit/utilities';
+} from '@dnd-kit-orchestra/utilities';
 
 import {defaultCoordinates} from '../../utilities';
 import {

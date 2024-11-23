@@ -1,4 +1,4 @@
-import {getWindow} from '@dnd-kit/utilities';
+import {getWindow} from '@dnd-kit-orchestra/utilities';
 
 export function isFixed(
   node: HTMLElement,

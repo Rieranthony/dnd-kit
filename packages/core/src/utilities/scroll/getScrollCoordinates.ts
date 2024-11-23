@@ -1,4 +1,4 @@
-import {isWindow} from '@dnd-kit/utilities';
+import {isWindow} from '@dnd-kit-orchestra/utilities';
 
 import type {Coordinates} from '../../types';
 

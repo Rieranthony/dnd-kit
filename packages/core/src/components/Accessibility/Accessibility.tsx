@@ -1,7 +1,11 @@
 import React, {useEffect, useMemo, useState} from 'react';
 import {createPortal} from 'react-dom';
-import {useUniqueId} from '@dnd-kit/utilities';
-import {HiddenText, LiveRegion, useAnnouncement} from '@dnd-kit/accessibility';
+import {useUniqueId} from '@dnd-kit-orchestra/utilities';
+import {
+  HiddenText,
+  LiveRegion,
+  useAnnouncement,
+} from '@dnd-kit-orchestra/accessibility';
 
 import {DndMonitorListener, useDndMonitor} from '../DndMonitor';
 

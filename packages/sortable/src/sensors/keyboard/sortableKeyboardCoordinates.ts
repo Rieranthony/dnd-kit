@@ -5,8 +5,8 @@ import {
   KeyboardCode,
   DroppableContainer,
   KeyboardCoordinateGetter,
-} from '@dnd-kit/core';
-import {subtract} from '@dnd-kit/utilities';
+} from '@dnd-kit-orchestra/core';
+import {subtract} from '@dnd-kit-orchestra/utilities';
 
 import {hasSortableData} from '../../types';
 

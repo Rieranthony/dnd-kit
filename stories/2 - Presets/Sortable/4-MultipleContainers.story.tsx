@@ -1,6 +1,6 @@
 import React from 'react';
-import type {CancelDrop, UniqueIdentifier} from '@dnd-kit/core';
-import {rectSortingStrategy} from '@dnd-kit/sortable';
+import type {CancelDrop, UniqueIdentifier} from '@dnd-kit-orchestra/core';
+import {rectSortingStrategy} from '@dnd-kit-orchestra/sortable';
 
 import {MultipleContainers, TRASH_ID} from './MultipleContainers';
 

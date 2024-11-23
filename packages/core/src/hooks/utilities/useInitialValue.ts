@@ -1,4 +1,4 @@
-import {useLazyMemo} from '@dnd-kit/utilities';
+import {useLazyMemo} from '@dnd-kit-orchestra/utilities';
 
 type AnyFunction = (...args: any) => any;
 

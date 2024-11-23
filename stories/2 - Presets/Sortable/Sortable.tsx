@@ -21,7 +21,7 @@ import {
   useSensor,
   useSensors,
   defaultDropAnimationSideEffects,
-} from '@dnd-kit/core';
+} from '@dnd-kit-orchestra/core';
 import {
   arrayMove,
   useSortable,
@@ -31,7 +31,7 @@ import {
   rectSortingStrategy,
   AnimateLayoutChanges,
   NewIndexGetter,
-} from '@dnd-kit/sortable';
+} from '@dnd-kit-orchestra/sortable';
 
 import {createRange} from '../../utilities';
 import {Item, List, Wrapper} from '../../components';

@@ -1,5 +1,9 @@
 import {useCallback, useEffect, useMemo, useRef} from 'react';
-import {useInterval, useLazyMemo, usePrevious} from '@dnd-kit/utilities';
+import {
+  useInterval,
+  useLazyMemo,
+  usePrevious,
+} from '@dnd-kit-orchestra/utilities';
 
 import {getScrollDirectionAndSpeed} from '../../utilities';
 import {Direction} from '../../types';

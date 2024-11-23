@@ -1,12 +1,12 @@
 {
-  "name": "@dnd-kit/core",
+  "name": "@dnd-kit-orchestra/core",
   "version": "6.1.0",
   "description": "dnd kit – a lightweight React library for building performant and accessible drag and drop experiences",
   "author": "Claudéric Demers",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/clauderic/dnd-kit.git",
+    "url": "git+https://github.com/Rieranthony/dnd-kit.git",
     "directory": "packages/core"
   },
   "scripts": {
@@ -31,8 +31,8 @@
   },
   "dependencies": {
     "tslib": "^2.0.0",
-    "@dnd-kit/accessibility": "^3.1.0",
-    "@dnd-kit/utilities": "^3.2.2"
+    "@dnd-kit-orchestra/accessibility": "^3.1.0",
+    "@dnd-kit-orchestra/utilities": "^3.2.2"
   },
   "publishConfig": {
     "access": "public"

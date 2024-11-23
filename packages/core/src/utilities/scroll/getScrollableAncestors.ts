@@ -3,7 +3,7 @@ import {
   isDocument,
   isHTMLElement,
   isSVGElement,
-} from '@dnd-kit/utilities';
+} from '@dnd-kit-orchestra/utilities';
 
 import {isFixed} from './isFixed';
 import {isScrollable} from './isScrollable';

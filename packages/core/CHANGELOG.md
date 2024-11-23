@@ -1,4 +1,4 @@
-# @dnd-kit/core
+# @dnd-kit-orchestra/core
 
 ## 6.1.0
 
@@ -23,8 +23,8 @@
 ### Patch Changes
 
 - Updated dependencies [[`aabb8bd`](https://github.com/clauderic/dnd-kit/commit/aabb8bd114cf1f0aed0f18e70b296d5905ff04d8), [`f342d5e`](https://github.com/clauderic/dnd-kit/commit/f342d5efd98507f173b6a170b35bee1545d40311)]:
-  - @dnd-kit/accessibility@3.1.0
-  - @dnd-kit/utilities@3.2.2
+  - @dnd-kit-orchestra/accessibility@3.1.0
+  - @dnd-kit-orchestra/utilities@3.2.2
 
 ## 6.0.8
 
@@ -45,7 +45,7 @@
 - [#948](https://github.com/clauderic/dnd-kit/pull/948) [`da7c60d`](https://github.com/clauderic/dnd-kit/commit/da7c60dcbb76d89cf1fcb421e69a4abcea2eeebe) Thanks [@Ayc0](https://github.com/Ayc0)! - Upgrade to TypeScript to 4.8
 
 - Updated dependencies [[`da7c60d`](https://github.com/clauderic/dnd-kit/commit/da7c60dcbb76d89cf1fcb421e69a4abcea2eeebe)]:
-  - @dnd-kit/utilities@3.2.1
+  - @dnd-kit-orchestra/utilities@3.2.1
 
 ## 6.0.5
 
@@ -63,7 +63,7 @@
 
 ### Patch Changes
 
-- [#772](https://github.com/clauderic/dnd-kit/pull/772) [`e97cb1f`](https://github.com/clauderic/dnd-kit/commit/e97cb1f3240cb495c8bf5c63e5145cf15c411a6f) Thanks [@clauderic](https://github.com/clauderic)! - The ARIA live region element used for screen reader announcements is now positioned using `position: fixed` instead of `position: absolute`. As of `@dnd-kit/core^6.0.0`, the live region element is no longer portaled by default into the `document.body`. This change was introduced in order to fix issues with portaled live regions. However, this change can introduce visual regressions when using absolutely positioned elements, since the live region element is constrained to the stacking and position context of its closest positioned ancestor. Using fixed position ensures the element does not introduce visual regressions.
+- [#772](https://github.com/clauderic/dnd-kit/pull/772) [`e97cb1f`](https://github.com/clauderic/dnd-kit/commit/e97cb1f3240cb495c8bf5c63e5145cf15c411a6f) Thanks [@clauderic](https://github.com/clauderic)! - The ARIA live region element used for screen reader announcements is now positioned using `position: fixed` instead of `position: absolute`. As of `@dnd-kit-orchestra/core^6.0.0`, the live region element is no longer portaled by default into the `document.body`. This change was introduced in order to fix issues with portaled live regions. However, this change can introduce visual regressions when using absolutely positioned elements, since the live region element is constrained to the stacking and position context of its closest positioned ancestor. Using fixed position ensures the element does not introduce visual regressions.
 
 ## 6.0.2
 
@@ -188,7 +188,7 @@
   The `keyframes` option allows consumers to override the keyframes of the drop animation. For example, here is how you would add a fade out transition to the drop animation using keyframes:
 
   ```ts
-  import {CSS} from '@dnd-kit/utilities';
+  import {CSS} from '@dnd-kit-orchestra/utilities';
 
   const customDropAnimation = {
     keyframes({transform}) {
@@ -210,7 +210,7 @@
   ) => CleanupFunction | void;
   ```
 
-  Drop animation side effects are a powerful abstraction that provide a lot of flexibility. The `defaultDropAnimationSideEffects` function is exported by `@dnd-kit/core` and aims to facilitate the types of side-effects we anticipate most consumers will want to use out of the box:
+  Drop animation side effects are a powerful abstraction that provide a lot of flexibility. The `defaultDropAnimationSideEffects` function is exported by `@dnd-kit-orchestra/core` and aims to facilitate the types of side-effects we anticipate most consumers will want to use out of the box:
 
   ```ts
   interface DefaultDropAnimationSideEffectsOptions {
@@ -281,7 +281,7 @@
   For consumers that were relying on the `dragSourceOpacity` property in their `dropAnimation` configuration:
 
   ```diff
-  + import {defaultDropAnimationSideEffects} from '@dnd-kit/core';
+  + import {defaultDropAnimationSideEffects} from '@dnd-kit-orchestra/core';
 
   const dropAnimation = {
   - dragSourceOpacity: 0.5,
@@ -315,7 +315,7 @@
   For consumers that are using TypeScript, import the `UniqueIdentifier` type to have strongly typed local state:
 
   ```diff
-  + import type {UniqueIdentifier} from '@dnd-kit/core';
+  + import type {UniqueIdentifier} from '@dnd-kit-orchestra/core';
 
   function MyComponent() {
   -  const [items, setItems] = useState(['A', 'B', 'C']);
@@ -343,7 +343,7 @@
   Consumers of `useDraggable` and `useSortable` may now optionally set the activator node ref on the element that receives listeners:
 
   ```diff
-  import {useDraggable} from '@dnd-kit/core';
+  import {useDraggable} from '@dnd-kit-orchestra/core';
 
   function Draggable(props) {
     const {
@@ -463,7 +463,7 @@
 
 - [#742](https://github.com/clauderic/dnd-kit/pull/742) [`7161f70`](https://github.com/clauderic/dnd-kit/commit/7161f702c9fe06f8dafa6449d48b918070ca46fb) Thanks [@clauderic](https://github.com/clauderic)! - Fallback to initial rect measured for the active draggable node if it unmounts during initialization (after `onDragStart` is dispatched).
 
-- [#749](https://github.com/clauderic/dnd-kit/pull/749) [`5811986`](https://github.com/clauderic/dnd-kit/commit/5811986e7544a5e80039870a015e38df805eaad1) Thanks [@clauderic](https://github.com/clauderic)! - The `Data` and `DataRef` types are now exported by `@dnd-kit/core`.
+- [#749](https://github.com/clauderic/dnd-kit/pull/749) [`5811986`](https://github.com/clauderic/dnd-kit/commit/5811986e7544a5e80039870a015e38df805eaad1) Thanks [@clauderic](https://github.com/clauderic)! - The `Data` and `DataRef` types are now exported by `@dnd-kit-orchestra/core`.
 
 - [#699](https://github.com/clauderic/dnd-kit/pull/699) [`e302bd4`](https://github.com/clauderic/dnd-kit/commit/e302bd4488bdfb6735c97ac42c1f4a0b1e8bfdf9) Thanks [@JuAn-Kang](https://github.com/JuAn-Kang)! - Export `DragOverlayProps` for consumers.
 
@@ -472,7 +472,7 @@
 - [#660](https://github.com/clauderic/dnd-kit/pull/660) [`e6e242c`](https://github.com/clauderic/dnd-kit/commit/e6e242cbc718ed687a26f5c622eeed4dbd6c2425) Thanks [@clauderic](https://github.com/clauderic)! - The `KeyboardSensor` was updated to use `scrollTo` instead of `scrollBy` when it is able to fully scroll to the new coordinates returned by the coordinate getter function. This resolves issues that can happen with `scrollBy` when called in rapid succession.
 
 - Updated dependencies [[`59ca82b`](https://github.com/clauderic/dnd-kit/commit/59ca82b9f228f34c7731ece87aef5d9633608b57), [`035021a`](https://github.com/clauderic/dnd-kit/commit/035021aac51161e2bf9715f087a6dd1b46647bfc)]:
-  - @dnd-kit/utilities@3.2.0
+  - @dnd-kit-orchestra/utilities@3.2.0
 
 ## 5.0.3
 
@@ -536,7 +536,7 @@
   Consumers can also access the array of collisions in components wrapped by `<DndContext>` via the `useDndContext()` hook:
 
   ```ts
-  import {useDndContext} from '@dnd-kit/core';
+  import {useDndContext} from '@dnd-kit-orchestra/core';
 
   function MyComponent() {
     const {collisions} = useDndContext();
@@ -584,7 +584,7 @@
     - Consumers can choose an alternate approach that does consider transforms for specific use-cases if needed by configuring the measuring prop of <DndContext>. Refer to the <Switch> example.
   - Reduced the number of concepts related to measuring from `ViewRect`, `LayoutRect` to just a single concept of `ClientRect`.
     - The `ClientRect` interface no longer holds the `offsetTop` and `offsetLeft` properties. For most use-cases, you can replace `offsetTop` with `top` and `offsetLeft` with `left`.
-    - Replaced the following exports from the `@dnd-kit/core` package with `getClientRect`:
+    - Replaced the following exports from the `@dnd-kit-orchestra/core` package with `getClientRect`:
       - `getBoundingClientRect`
       - `getViewRect`
       - `getLayoutRect`
@@ -620,7 +620,7 @@
 ### Patch Changes
 
 - Updated dependencies [[`6310227`](https://github.com/clauderic/dnd-kit/commit/63102272d0d63dae349e2e9f638277e16a7d5970), [`528c67e`](https://github.com/clauderic/dnd-kit/commit/528c67e4c617dfc0ce5221496aa8b222ffc82ddb), [`02edd26`](https://github.com/clauderic/dnd-kit/commit/02edd2691b24bb49f2e7c9f9a3f282031bf658b7)]:
-  - @dnd-kit/utilities@3.1.0
+  - @dnd-kit-orchestra/utilities@3.1.0
 
 ## 4.0.3
 
@@ -651,7 +651,7 @@
   ```
 
 - Updated dependencies [[`1c6369e`](https://github.com/clauderic/dnd-kit/commit/1c6369e24ff338760adfb806c3017c72f3194726)]:
-  - @dnd-kit/utilities@3.0.1
+  - @dnd-kit-orchestra/utilities@3.0.1
 
 ## 4.0.2
 
@@ -705,7 +705,7 @@
     DndContext,
     getBoundingClientRect,
     MeasuringConfiguration,
-  } from '@dnd-kit/core';
+  } from '@dnd-kit-orchestra/core';
 
   const measuringConfig: MeasuringConfiguration = {
     draggable: {
@@ -770,7 +770,7 @@
 - [`1fe9b5c`](https://github.com/clauderic/dnd-kit/commit/1fe9b5c9d34237aae6ab22d54478c419d44a079a) Thanks [@clauderic](https://github.com/clauderic)! - The TouchSensor attempts to prevent the default browser behavior of scrolling the page by calling `event.preventDefault()` in the `touchmove` event listener. This wasn't working in iOS Safari due to a bug with dynamically attached `touchmove` event listeners. Adding a non-passive, non-capture `touchmove` event listener before dynamically attaching other `touchmove` event listeners solves the issue.
 
 - Updated dependencies [[`0e628bc`](https://github.com/clauderic/dnd-kit/commit/0e628bce53fb1a7223cdedd203cb07b6e62e5ec1), [`13be602`](https://github.com/clauderic/dnd-kit/commit/13be602229c6d5723b3ae98bca7b8f45f0773366), [`1f5ca27`](https://github.com/clauderic/dnd-kit/commit/1f5ca27b17879861c2c545160c2046a747544846)]:
-  - @dnd-kit/utilities@3.0.0
+  - @dnd-kit-orchestra/utilities@3.0.0
 
 ## 3.1.1
 
@@ -812,7 +812,7 @@
 
 ### Patch Changes
 
-- [`f9ec28f`](https://github.com/clauderic/dnd-kit/commit/f9ec28fed77778669f93cfecee159dba54db38b4) [#217](https://github.com/clauderic/dnd-kit/pull/217) Thanks [@clauderic](https://github.com/clauderic)! - Fixes a regression introduced with `@dnd-kit/core@3.0.0` that was causeing sensors to stop working after a drag operation where activation constraints were not met.
+- [`f9ec28f`](https://github.com/clauderic/dnd-kit/commit/f9ec28fed77778669f93cfecee159dba54db38b4) [#217](https://github.com/clauderic/dnd-kit/pull/217) Thanks [@clauderic](https://github.com/clauderic)! - Fixes a regression introduced with `@dnd-kit-orchestra/core@3.0.0` that was causeing sensors to stop working after a drag operation where activation constraints were not met.
 
 ## 3.0.0
 
@@ -834,7 +834,7 @@
   Example usage:
 
   ```tsx
-  import {DndContext, useDndMonitor} from '@dnd-kit/core';
+  import {DndContext, useDndMonitor} from '@dnd-kit-orchestra/core';
 
   function App() {
     return (
@@ -862,7 +862,11 @@
   **Example usage:**
 
   ```tsx
-  import {DndContext, useDraggable, useDroppable} from '@dnd-kit/core';
+  import {
+    DndContext,
+    useDraggable,
+    useDroppable,
+  } from '@dnd-kit-orchestra/core';
 
   function Draggable() {
     const {attributes, listeners, setNodeRef, transform} = useDraggable({
@@ -902,8 +906,8 @@
 ### Patch Changes
 
 - Updated dependencies [[`a9d92cf`](https://github.com/clauderic/dnd-kit/commit/a9d92cf1fa35dd957e6c5915a13dfd2af134c103), [`b406cb9`](https://github.com/clauderic/dnd-kit/commit/b406cb9251beef8677d05c45ec42bab7581a86dc)]:
-  - @dnd-kit/accessibility@3.0.0
-  - @dnd-kit/utilities@2.0.0
+  - @dnd-kit-orchestra/accessibility@3.0.0
+  - @dnd-kit-orchestra/utilities@2.0.0
 
 ## 2.1.2
 
@@ -914,7 +918,7 @@
   - The current strategy used in the useAnnouncement hook is needlessly complex. It's not actually necessary to render multiple announcements at once within the LiveRegion component. It's sufficient to render a single announcement at a time. It's also un-necessary to clean up the announcements after they have been announced, especially now that the role="status" attribute has been added to LiveRegion, keeping the last announcement rendered means users can refer to the last status.
 
 - Updated dependencies [[`c24bdb3`](https://github.com/clauderic/dnd-kit/commit/c24bdb3723f1e3e4c474439f837a19c6d48059fb), [`2833337`](https://github.com/clauderic/dnd-kit/commit/2833337043719853902c3989dfcd5b55ae9ddc73)]:
-  - @dnd-kit/accessibility@2.0.0
+  - @dnd-kit-orchestra/accessibility@2.0.0
 
 ## 2.1.1
 
@@ -994,7 +998,7 @@
   This behaviour can be customized using the `activator` option of the `autoScroll` prop:
 
   ```tsx
-  import {AutoScrollActivator, DndContext} from '@dnd-kit/core';
+  import {AutoScrollActivator, DndContext} from '@dnd-kit-orchestra/core';
 
   <DndContext autoScroll={{activator: AutoScrollActivator.DraggableRect}} />;
   ```
@@ -1004,7 +1008,7 @@
   This generally leads to an improved user experience, but can be customized by passing a configuration object to the `autoScroll` prop that sets the `order` option to `TraversalOrder.ReversedTreeOrder` instead of the new default value of `TraversalOrder.TreeOrder`:
 
   ```tsx
-  import {DndContext, TraversalOrder} from '@dnd-kit/core';
+  import {DndContext, TraversalOrder} from '@dnd-kit-orchestra/core';
 
   <DndContext autoScroll={{order: TraversalOrder.ReversedTreeOrder}} />;
   ```
@@ -1012,7 +1016,7 @@
   The autoscrolling `thresholds`, `acceleration` and `interval` can now also be customized using the `autoScroll` prop:
 
   ```tsx
-  import {DndContext} from '@dnd-kit/core';
+  import {DndContext} from '@dnd-kit-orchestra/core';
 
   <DndContext
     autoScroll={{
@@ -1033,7 +1037,7 @@
   Finally, consumers can now conditionally opt out of scrolling certain scrollable ancestors using the `canScroll` option of the `autoScroll` prop:
 
   ```tsx
-  import {DndContext} from '@dnd-kit/core';
+  import {DndContext} from '@dnd-kit-orchestra/core';
 
   <DndContext
     autoScroll={{
@@ -1079,8 +1083,8 @@
 - [`fd25eaf`](https://github.com/clauderic/dnd-kit/commit/fd25eaf7c114f73918bf83801890d970c9b56d18) [#68](https://github.com/clauderic/dnd-kit/pull/68) Thanks [@Pustelto](https://github.com/Pustelto)! - Wrap attributes returned from useDraggable hook in useMemo to allow pure component optimization
 
 - Updated dependencies [[`423610c`](https://github.com/clauderic/dnd-kit/commit/423610ca48c5e5ca95545fdb5c5cfcfbd3d233ba)]:
-  - @dnd-kit/accessibility@1.0.2
-  - @dnd-kit/utilities@1.0.2
+  - @dnd-kit-orchestra/accessibility@1.0.2
+  - @dnd-kit-orchestra/utilities@1.0.2
 
 ## 1.0.1
 
@@ -1091,8 +1095,8 @@
 - [`310bbd6`](https://github.com/clauderic/dnd-kit/commit/310bbd6370e85f8fb16cad149e6254600a5beb3a) [#37](https://github.com/clauderic/dnd-kit/pull/37) Thanks [@nickpresta](https://github.com/nickpresta)! - Fix typo in package.json repository URL
 
 - Updated dependencies [[`0b343c7`](https://github.com/clauderic/dnd-kit/commit/0b343c7e88a68351f8a39f643e9f26b8e046ef48), [`310bbd6`](https://github.com/clauderic/dnd-kit/commit/310bbd6370e85f8fb16cad149e6254600a5beb3a)]:
-  - @dnd-kit/utilities@1.0.1
-  - @dnd-kit/accessibility@1.0.1
+  - @dnd-kit-orchestra/utilities@1.0.1
+  - @dnd-kit-orchestra/accessibility@1.0.1
 
 ## 1.0.0
 
@@ -1103,8 +1107,8 @@
 ### Patch Changes
 
 - Updated dependencies [[`2912350`](https://github.com/clauderic/dnd-kit/commit/2912350c5008c2b0edda3bae30b5075a852dea63)]:
-  - @dnd-kit/accessibility@1.0.0
-  - @dnd-kit/utilities@1.0.0
+  - @dnd-kit-orchestra/accessibility@1.0.0
+  - @dnd-kit-orchestra/utilities@1.0.0
 
 ## 0.1.1
 
@@ -1123,5 +1127,5 @@
 ### Patch Changes
 
 - Updated dependencies [[`7bd4568`](https://github.com/clauderic/dnd-kit/commit/7bd4568e9f339552fd73a9a4c888460b11195a5e)]:
-  - @dnd-kit/accessibility@0.1.0
-  - @dnd-kit/utilities@0.1.0
+  - @dnd-kit-orchestra/accessibility@0.1.0
+  - @dnd-kit-orchestra/utilities@0.1.0

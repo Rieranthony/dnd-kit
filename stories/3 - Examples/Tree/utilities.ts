@@ -1,5 +1,5 @@
-import type {UniqueIdentifier} from '@dnd-kit/core';
-import {arrayMove} from '@dnd-kit/sortable';
+import type {UniqueIdentifier} from '@dnd-kit-orchestra/core';
+import {arrayMove} from '@dnd-kit-orchestra/sortable';
 
 import type {FlattenedItem, TreeItem, TreeItems} from './types';
 

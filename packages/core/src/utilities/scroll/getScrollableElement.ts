@@ -5,7 +5,7 @@ import {
   getOwnerDocument,
   isNode,
   isWindow,
-} from '@dnd-kit/utilities';
+} from '@dnd-kit-orchestra/utilities';
 
 export function getScrollableElement(element: EventTarget | null) {
   if (!canUseDOM || !element) {

@@ -1,4 +1,4 @@
-import type {Transform} from '@dnd-kit/utilities';
+import type {Transform} from '@dnd-kit-orchestra/utilities';
 import type {ClientRect} from '../../types';
 
 export function adjustScale(

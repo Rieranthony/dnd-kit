@@ -16,8 +16,8 @@ import {
   useLatestValue,
   useIsomorphicLayoutEffect,
   useUniqueId,
-} from '@dnd-kit/utilities';
-import type {Transform} from '@dnd-kit/utilities';
+} from '@dnd-kit-orchestra/utilities';
+import type {Transform} from '@dnd-kit-orchestra/utilities';
 
 import {
   Action,

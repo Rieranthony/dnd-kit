@@ -9,15 +9,15 @@ import {
   PointerActivationConstraint,
   Modifiers,
   useSensors,
-} from '@dnd-kit/core';
+} from '@dnd-kit-orchestra/core';
 import {
   createSnapModifier,
   restrictToHorizontalAxis,
   restrictToVerticalAxis,
   restrictToWindowEdges,
   snapCenterToCursor,
-} from '@dnd-kit/modifiers';
-import type {Coordinates} from '@dnd-kit/utilities';
+} from '@dnd-kit-orchestra/modifiers';
+import type {Coordinates} from '@dnd-kit-orchestra/utilities';
 
 import {
   Axis,

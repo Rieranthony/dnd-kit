@@ -9,7 +9,7 @@ import {
   UniqueIdentifier,
   CollisionDetection as CollisionDetectionType,
   Modifiers,
-} from '@dnd-kit/core';
+} from '@dnd-kit-orchestra/core';
 
 import {
   Draggable,

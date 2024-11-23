@@ -1,4 +1,4 @@
-import {useIsomorphicLayoutEffect} from '@dnd-kit/utilities';
+import {useIsomorphicLayoutEffect} from '@dnd-kit-orchestra/utilities';
 
 import {scrollIntoViewIfNeeded} from '../../utilities/scroll';
 

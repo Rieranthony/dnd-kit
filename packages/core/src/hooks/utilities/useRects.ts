@@ -1,5 +1,8 @@
 import {useReducer} from 'react';
-import {getWindow, useIsomorphicLayoutEffect} from '@dnd-kit/utilities';
+import {
+  getWindow,
+  useIsomorphicLayoutEffect,
+} from '@dnd-kit-orchestra/utilities';
 
 import type {ClientRect} from '../../types';
 import {Rect, getClientRect} from '../../utilities/rect';
@@ -31,7 +34,7 @@ export function useRects(
     } else {
       resizeObserver?.disconnect();
     }
-    
+
     measureRects();
   }, [elements]);
 

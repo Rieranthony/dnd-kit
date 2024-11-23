@@ -1,11 +1,11 @@
 import React from 'react';
-import {MeasuringStrategy} from '@dnd-kit/core';
+import {MeasuringStrategy} from '@dnd-kit-orchestra/core';
 import {
   AnimateLayoutChanges,
   defaultAnimateLayoutChanges,
   horizontalListSortingStrategy,
-} from '@dnd-kit/sortable';
-import {restrictToHorizontalAxis} from '@dnd-kit/modifiers';
+} from '@dnd-kit-orchestra/sortable';
+import {restrictToHorizontalAxis} from '@dnd-kit-orchestra/modifiers';
 
 import {createRange} from '../../utilities';
 import {List} from '../../components';

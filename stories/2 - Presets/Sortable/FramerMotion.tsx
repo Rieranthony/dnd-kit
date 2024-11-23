@@ -9,14 +9,14 @@ import {
   useSensor,
   useSensors,
   UniqueIdentifier,
-} from '@dnd-kit/core';
+} from '@dnd-kit-orchestra/core';
 import {
   SortableContext,
   useSortable,
   arrayMove,
   rectSortingStrategy,
   sortableKeyboardCoordinates,
-} from '@dnd-kit/sortable';
+} from '@dnd-kit-orchestra/sortable';
 
 import {GridContainer, Wrapper} from '../../components';
 import {createRange} from '../../utilities';
@@ -76,16 +76,11 @@ const initialStyles = {
 };
 
 function Item({id}: {id: UniqueIdentifier}) {
-  const {
-    attributes,
-    setNodeRef,
-    listeners,
-    transform,
-    isDragging,
-  } = useSortable({
-    id,
-    transition: null,
-  });
+  const {attributes, setNodeRef, listeners, transform, isDragging} =
+    useSortable({
+      id,
+      transition: null,
+    });
 
   return (
     <motion.div

@@ -1,11 +1,15 @@
 import React from 'react';
-import {DndContext, useDraggable} from '@dnd-kit/core';
-import type {DropAnimation, Modifiers, Translate} from '@dnd-kit/core';
+import {DndContext, useDraggable} from '@dnd-kit-orchestra/core';
+import type {
+  DropAnimation,
+  Modifiers,
+  Translate,
+} from '@dnd-kit-orchestra/core';
 import {
   restrictToHorizontalAxis,
   restrictToVerticalAxis,
   restrictToWindowEdges,
-} from '@dnd-kit/modifiers';
+} from '@dnd-kit-orchestra/modifiers';
 
 import {Axis, Draggable, DraggableOverlay, Wrapper} from '../../components';
 

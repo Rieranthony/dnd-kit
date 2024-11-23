@@ -5,8 +5,8 @@ import {
   PointerSensor,
   useSensor,
   useSensors,
-} from '@dnd-kit/core';
-import {restrictToVerticalAxis} from '@dnd-kit/modifiers';
+} from '@dnd-kit-orchestra/core';
+import {restrictToVerticalAxis} from '@dnd-kit-orchestra/modifiers';
 
 import {Region} from './constants';
 import {rubberbandModifier} from './modifiers';

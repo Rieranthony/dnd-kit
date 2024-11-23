@@ -1,5 +1,5 @@
 import {useEffect, useRef} from 'react';
-import {Coordinates, subtract} from '@dnd-kit/utilities';
+import {Coordinates, subtract} from '@dnd-kit-orchestra/utilities';
 
 import {defaultCoordinates} from '../../utilities';
 

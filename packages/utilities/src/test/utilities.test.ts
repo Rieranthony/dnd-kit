@@ -1,4 +1,4 @@
-describe('@dnd-kit/utilities', () => {
+describe('@dnd-kit-orchestra/utilities', () => {
   it('works', () => {
     expect(true).toBe(true);
   });

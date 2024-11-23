@@ -1,5 +1,5 @@
 import React from 'react';
-import {useDroppable} from '@dnd-kit/core';
+import {useDroppable} from '@dnd-kit-orchestra/core';
 
 import {Region} from './constants';
 import styles from './Drawer.module.css';

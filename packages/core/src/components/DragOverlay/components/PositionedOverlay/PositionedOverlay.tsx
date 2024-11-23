@@ -1,7 +1,7 @@
 import React, {forwardRef} from 'react';
-import {CSS, isKeyboardEvent} from '@dnd-kit/utilities';
+import {CSS, isKeyboardEvent} from '@dnd-kit-orchestra/utilities';
 
-import type {Transform} from '@dnd-kit/utilities';
+import type {Transform} from '@dnd-kit-orchestra/utilities';
 
 import {getRelativeTransformOrigin} from '../../../../utilities';
 import type {ClientRect, UniqueIdentifier} from '../../../../types';

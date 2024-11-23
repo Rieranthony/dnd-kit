@@ -1,6 +1,13 @@
 import React, {useEffect, useMemo, useRef} from 'react';
-import {useDndContext, ClientRect, UniqueIdentifier} from '@dnd-kit/core';
-import {useIsomorphicLayoutEffect, useUniqueId} from '@dnd-kit/utilities';
+import {
+  useDndContext,
+  ClientRect,
+  UniqueIdentifier,
+} from '@dnd-kit-orchestra/core';
+import {
+  useIsomorphicLayoutEffect,
+  useUniqueId,
+} from '@dnd-kit-orchestra/utilities';
 
 import type {Disabled, SortingStrategy} from '../types';
 import {getSortedRects, itemsEqual, normalizeDisabled} from '../utilities';

@@ -1,4 +1,4 @@
-import type {Coordinates} from '@dnd-kit/utilities';
+import type {Coordinates} from '@dnd-kit-orchestra/utilities';
 
 export type {Coordinates};
 

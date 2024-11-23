@@ -1,4 +1,4 @@
-import {CSS} from '@dnd-kit/utilities';
+import {CSS} from '@dnd-kit-orchestra/utilities';
 
 import {arrayMove} from '../utilities';
 

@@ -11,13 +11,13 @@ import {
   useSensor,
   useSensors,
   UniqueIdentifier,
-} from '@dnd-kit/core';
+} from '@dnd-kit-orchestra/core';
 import {
   arrayMove,
   sortableKeyboardCoordinates,
   SortableContext,
   verticalListSortingStrategy,
-} from '@dnd-kit/sortable';
+} from '@dnd-kit-orchestra/sortable';
 
 import styles from './Virtualized.module.css';
 

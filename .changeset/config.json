@@ -2,7 +2,9 @@
   "$schema": "https://unpkg.com/@changesets/config@1.5.0/schema.json",
   "changelog": [
     "@changesets/changelog-github",
-    { "repo": "clauderic/dnd-kit" }
+    {
+      "repo": "Rieranthony/dnd-kit-orchestra"
+    }
   ],
   "commit": false,
   "linked": [],

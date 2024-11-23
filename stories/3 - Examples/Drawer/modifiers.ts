@@ -1,5 +1,5 @@
-import type {ClientRect, Modifier} from '@dnd-kit/core';
-import type {Transform} from '@dnd-kit/utilities';
+import type {ClientRect, Modifier} from '@dnd-kit-orchestra/core';
+import type {Transform} from '@dnd-kit-orchestra/utilities';
 
 import {MAX_DRAWER_HEIGHT_PERCENT} from './constants';
 

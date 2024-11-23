@@ -1,4 +1,4 @@
-import {getWindow} from '@dnd-kit/utilities';
+import {getWindow} from '@dnd-kit-orchestra/utilities';
 
 import type {ClientRect} from '../../types';
 import {inverseTransform} from '../transform';
